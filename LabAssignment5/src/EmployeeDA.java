@@ -10,17 +10,18 @@ public class EmployeeDA {
 
 
                    while (employeeFile.hasNextLine()){
-                       String[] employeeLineData = employeeFile.nextLine().split(",",4);
+                       String[] employeeLineData = employeeFile.nextLine().split(",");
 
-                       if(employeeLineData[0].equals(empNo)){
-                           employee.setEmpNo(employeeLineData[0].trim());
+                       if(empNo.equals(employeeLineData[0].trim())){
+                           employee = new Employee();
+                           employee.setEmpNo(empNo);
                            employee.setLastName(employeeLineData[1].trim());
                            employee.setFirstName(employeeLineData[2].trim());
                            break;
 
                        }
                    }
-                    employeeFile.nextLine();
+                    employeeFile.close();
                 }
                 catch (FileNotFoundException e) {
                     throw new RuntimeException(e);
