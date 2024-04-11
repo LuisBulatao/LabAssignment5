@@ -3,7 +3,7 @@
 Creating objects that will handle the retrieval of the csv files to convert it into objects. These are EmployeeDA and EmployeeDA objects.
 ![image](https://github.com/LuisBulatao/LabAssignment5/assets/115807743/fd74aac4-cd1d-47d1-86c4-f013ab5da54f)
 
-dep.csv contains the following
+dep.csv contains the following.
 ![image](https://github.com/LuisBulatao/LabAssignment5/assets/115807743/90a72514-576d-44d6-b87b-99dbecd9600d)
 
 The deptemp.csv is referenced to get the salary of the employees per department:
