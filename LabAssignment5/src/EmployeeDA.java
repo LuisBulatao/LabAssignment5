@@ -10,7 +10,7 @@ public class EmployeeDA {
 
 
                    while (employeeFile.hasNextLine()){
-                       String[] employeeLineData = employeeFile.nextLine().split(",");
+                       String[] employeeLineData = employeeFile.nextLine().split(",", 4);
 
                        if(empNo.equals(employeeLineData[0].trim())){
                            employee = new Employee();
